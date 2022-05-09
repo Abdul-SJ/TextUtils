@@ -67,6 +67,7 @@ export default function TextForm(props) {
         props.showAlert("Removed extra spaces", "success");
     }
 
+
     return (
         <>
         <div className="container my-4">
@@ -93,3 +94,6 @@ export default function TextForm(props) {
         </>
     )
 }
+// one curly brace {} means we are writing javascript code in html & {{}} two curly brace means we are writing object in javascript
+
+//change language mode from the bottom right {} Javascript or {} Javascript React

@@ -1,3 +1,4 @@
+// import logo from './logo.svg';
 // import './App.css';     //we don't need external css as we are using bootstrap which is linked in public>index.html file
 
 import Navbar from "./components/Navbar";
@@ -9,9 +10,8 @@ import Alert from "./components/Alert";
 //   BrowserRouter as Router,
 //   Routes,
 //   Route,
-//   Link
+//   // Link
 // } from "react-router-dom";
-// import { Routes ,Route } from 'react-router-dom';
 
 //remember to close every tag in html like here <hr/> & <input/>
 //also replace 'class' with 'className'
@@ -36,10 +36,10 @@ function App() {
       document.body.style.backgroundColor = '#182a3c';     //background color
       document.body.style.color = '#fff';    //text color 
       showAlert("Dark Mode has been enabled", "success");
-      document.title = 'TextUtils - Dark Mode';
+      // document.title = 'TextUtils - Dark Mode';
       setInterval(() => {
         document.title = 'TextUtils is amazing';
-      }, 2200);
+      }, 3000);
       setInterval(() => {
         document.title = 'Install TextUtils now!';
       }, 1500);
@@ -49,19 +49,19 @@ function App() {
       document.body.style.backgroundColor = 'white';
       document.body.style.color = '#000';
       showAlert("Light Mode has been enabled", "success");
-      document.title = 'TextUtils - Light Mode';
+      // document.title = 'TextUtils - Light Mode';
     }
   }
   return (
     <>
-      {/* <Router>    using router to redirect to other page/menu without reloading the page */}
+      {/* <Router>    *using router to redirect to other page/menu without reloading the page */}
         <Navbar title="TextUtils" aboutText="About" searchBtn="ourBtn" mode={mode} toggleMode={toggleMode} enableText="Enable Dark mode" />
         <Alert alerts={alert} />
         <div>
           {/* <Routes> */}
-            {/* <Route path="/" element={<TextForm heading="Enter the Text to Analyze below" mode={mode} showAlert={showAlert} />}></Route> */}
-            <TextForm heading="Try TextUtils to Analyze the text" mode={mode} showAlert={showAlert} />
-            {/* <Route path="/about" element={<About />}></Route> */}
+            {/* <Route path="/" element={<TextForm heading="Try TextUtils to Analyze the text" mode={mode} showAlert={showAlert} />}></Route> */}
+            <TextForm heading="Enter the Text to Analyze below" mode={mode} showAlert={showAlert} />
+            {/* <Route path="/about" element={<About mode={mode} />}></Route> */}
           {/* </Routes> */}
         </div>
       {/* </Router> */}
