@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 // import './App.css';     //we don't need external css as we are using bootstrap which is linked in public>index.html file
 
 import Navbar from "./components/Navbar";
@@ -61,7 +60,7 @@ function App() {
         <div>
           {/* <Routes> */}
             {/* <Route path="/" element={<TextForm heading="Enter the Text to Analyze below" mode={mode} showAlert={showAlert} />}></Route> */}
-            <TextForm heading="Enter the Text to Analyze below" mode={mode} showAlert={showAlert} />
+            <TextForm heading="Try TextUtils to Analyze the text" mode={mode} showAlert={showAlert} />
             {/* <Route path="/about" element={<About />}></Route> */}
           {/* </Routes> */}
         </div>
